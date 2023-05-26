@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 body{
-    height: 100%;
+    background-image: url('img/background_cloud.png');
+    background-repeat:  repeat;
     color: #090909;
-    background: #eee;
-    font: 13px "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,Roboto,"ＭＳ Ｐゴシック",sans-serif;
+    font-family: 'Caveat', cursive ,"Kokoro";
+    font-size: 13px;
     text-size-adjust: 100%;
+    
 }
 @media screen and (max-width:480px) {
  
@@ -13,77 +16,196 @@ body{
     }
 }
 
-h1{
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width:260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+/*========= レイアウトのためのCSS START===============*/
+
+#container{
+    width:100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*========= レイアウトのためのCSS END===============*/
+
+.a{
+    text-decoration: none;
+    color: #039be5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.title{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: x-large;
+    padding: 30px 0px 5px 0px;
+}
+
+.name{
+    font-family: "Nikukyu";
     text-align: center;
 }
 
-h2{
-    text-align: center;
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: none;
+}
+
+.root_container{
+    width: 960px;
+    height: auto;
+    margin: 0px 0px 0px 100px;
 }
 
 .all_container{
     display: flex;
-    width: 780px;
-    margin: auto;
+    width: 960px;
+    margin: 0px 0px 0px 0px;
+    height: 430px;
+    background: aliceblue;
 }
 
 .text{
     word-break: break-all;
     overflow-wrap : break-word;
+    padding: 0px 15px 0px 15px;
 }
+
 
 .first_container{
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 300px;
+    height: 400px;
 }
 
 .first_container_1{
     position: relative;
     background-color: #fff;
-    width: 100%;
-    height: 100%;
+    height: auto;
+    width: 290px;
 }
 
 .second_container{
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 300px;
+    height: 400px;
 }
 
 .second_container_1{
     position: relative;
     background-color: #fff;
-    width: 100%;
-    height: 100%;
+    height: auto;
+    width: 290px;
 }
 
 .third_container{
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 300px;
+    height: 400px;
 }
 
 .third_container_1{
     position: relative;
     background-color: #fff;
-    width:100%;
-    height: 100%;
-}
-
-.side_container{
-    position: relative;
-    width: 200px;
-    height: 500px;
-    background-color: #fff;
-    margin-top: 62px;
-    margin-left: 15px;
+    height: auto;
+    width: 290px;
 }
 
 .portfolio{
     padding: 10px;
 }
 
+.portfolio_sub{
+    background-color: #ffc0cb94;
+    padding: 5px 5px 5px 5px;
+}
+
+.title{
+    margin: 0px 0px 0px 0px;
+}
+
+.all_container_2{
+    width: 960px;
+    margin: 0px 0px 0px 0px;
+    height:400px;
+    background: aliceblue;
+}
+
+
+.all_container_3{
+    width: 960px;
+    margin: 0px 0px 50px 0px;
+    height:400px;
+    background: aliceblue;
+}

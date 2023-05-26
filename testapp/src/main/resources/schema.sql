@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS users
+(
+    id INTEGER NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    mail VARCHAR(150),
+    created DATETIME,
+    PRIMARY KEY(id)
+);
