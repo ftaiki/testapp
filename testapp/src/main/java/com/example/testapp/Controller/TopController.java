@@ -13,6 +13,7 @@ public class TopController {
 
     @GetMapping("/index")
     public static String top(){
+        //for commit comment<3
         return "index";
     } 
 }
