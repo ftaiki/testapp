@@ -126,16 +126,15 @@ ul:not(.browser-default)>li {
 }
 
 .root_container{
-    width: 960px;
+    width: auto;
     height: auto;
-    margin: 0px 0px 0px 100px;
 }
 
 .all_container{
     display: flex;
     width: 960px;
-    margin: 0px 0px 0px 0px;
-    height: 430px;
+    margin: 0 auto;
+    height: auto;
     background: aliceblue;
 }
 
@@ -150,7 +149,7 @@ ul:not(.browser-default)>li {
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 400px;
+    height: auto;
 }
 
 .first_container_1{
@@ -158,13 +157,15 @@ ul:not(.browser-default)>li {
     background-color: #fff;
     height: auto;
     width: 290px;
+    margin: 15px 0px 0px 0px;
+
 }
 
 .second_container{
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 400px;
+    height: auto;
 }
 
 .second_container_1{
@@ -172,13 +173,15 @@ ul:not(.browser-default)>li {
     background-color: #fff;
     height: auto;
     width: 290px;
+    margin: 15px 0px 0px 0px;
+
 }
 
 .third_container{
     position: relative;
     margin-left: 20px;
     width: 300px;
-    height: 400px;
+    height: auto;
 }
 
 .third_container_1{
@@ -186,10 +189,13 @@ ul:not(.browser-default)>li {
     background-color: #fff;
     height: auto;
     width: 290px;
+    margin: 15px 0px 0px 0px;
+
 }
 
 .portfolio{
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 .portfolio_sub{
@@ -203,7 +209,7 @@ ul:not(.browser-default)>li {
 
 .all_container_2{
     width: 960px;
-    margin: 0px 0px 0px 0px;
+    margin: 0 auto;
     height:400px;
     background: aliceblue;
 }
@@ -211,7 +217,7 @@ ul:not(.browser-default)>li {
 
 .all_container_3{
     width: 960px;
-    margin: 0px 0px 50px 0px;
+    margin: 0 auto;
     height:400px;
     background: aliceblue;
 }
